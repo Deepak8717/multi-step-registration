@@ -11,39 +11,171 @@
     <div id="msform">
       <!--Progressbar-->
       <ul id="progressbar">
-        <li class="active">Account Setup</li>
-        <li>Profiles</li>
-        <li>Personal Details</li>
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
-      <!--Fireldsets-->
+      <!--Fieldsets-->
       <fieldset>
         <h2 class="title">Create Your Profile</h2>
         <h3 class="subtitle">Enter Company Details</h3>
         <div class="form-group">
-          <label for="username">Company Name</label>
-          <input type="text" name="company name" />
+          <label for="company">Company Name*</label>
+          <input type="text" name="company" required />
         </div>
         <div class="form-group">
-          <label for="username">Company Type</label>
-          <input type="text" name="company type" />
+          <label for="company_type">Company Type*</label>
+          <select id="company_type" name="company_type">
+            <option value="Type-a">Type A</option>
+            <option value="Type-b">Type B</option>
+            <option value="Type-c">Type C</option>
+          </select>
         </div>
         <div class="form-group">
-          <label for="username">Email</label>
+          <label for="email">Email*</label>
           <input type="text" name="email" />
         </div>
         <div class="form-group">
-          <label for="username">Contact</label>
+          <label for="contact">Contact*</label>
           <input type="text" name="contact" />
         </div>
         <div class="form-group">
-          <label for="username">Product Category</label>
-          <input type="text" name="Product category" />
+          <label for="Product_category">Product Category*</label>
+          <select id="Product_category" name="Product_category">
+            <option value="Type-a">Type A</option>
+            <option value="Type-b">Type B</option>
+            <option value="Type-c">Type C</option>
+          </select>
         </div>
         <div class="form-group">
-          <label for="username">If Other, Specify</label>
+          <label for="othe">If Other, Specify</label>
           <input type="text" name="other" />
         </div>
-        <input type="button" name="next" class="action-button" value="Next" />
+        <input
+          type="button"
+          name="next"
+          class="action-button next"
+          value="Next"
+        />
+      </fieldset>
+
+      <!--Fieldset-->
+      <fieldset>
+        <h2 class="title">Office Adress</h2>
+        <h3 class="subtitle">Your office Address</h3>
+        <div class="form-group">
+          <label for="Address">Head Office Address*</label>
+          <input type="text" name="Address" />
+        </div>
+        <div class="form-group">
+          <label for="country">Country*</label>
+          <select id="country" name="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="zipcode">Zip Code*</label>
+          <input type="text" name="zipcode" />
+        </div>
+
+        <div class="form-group">
+          <label for="state">State*</label>
+          <input type="text" name="state" />
+        </div>
+        <div class="form-group">
+          <label for="city">City*</label>
+          <input type="text" name="city" />
+        </div>
+        <input
+          type="button"
+          name="next"
+          class="action-button next"
+          value="Next"
+        />
+        <input
+          type="button"
+          name="prev"
+          class="action-button prev"
+          value="Prev"
+        />
+      </fieldset>
+
+      <!--Fieldset-->
+      <fieldset>
+        <h2 class="title">Billing Adress*</h2>
+        <h3 class="subtitle">Enter Your Billing Address</h3>
+        <div class="form-group">
+          <label for="Address">Billing Address*</label>
+          <input type="text" name="Address" />
+        </div>
+        <div class="form-group">
+          <label for="country">Country*</label>
+          <select id="country" name="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="zipcode">Zip Code*</label>
+          <input type="text" name="zipcode" />
+        </div>
+
+        <div class="form-group">
+          <label for="state">State*</label>
+          <input type="text" name="state" />
+        </div>
+        <div class="form-group">
+          <label for="city">City*</label>
+          <input type="text" name="city" />
+        </div>
+        <input
+          type="button"
+          name="next"
+          class="action-button next"
+          value="Next"
+        />
+        <input
+          type="button"
+          name="prev"
+          class="action-button prev"
+          value="Prev"
+        />
+      </fieldset>
+
+      <!--Fieldset-->
+      <fieldset>
+        <h2 class="title">Tax Information</h2>
+        <div class="form-group">
+          <label for="gst">GST*</label>
+          <input type="text" name="gst" />
+        </div>
+
+        <div class="form-group">
+          <label for="cin">CIN*</label>
+          <input type="text" name="cin" />
+        </div>
+
+        <div class="form-group">
+          <label for="state">TIN*</label>
+          <input type="text" name="state" />
+        </div>
+        <input
+          type="button"
+          name="next"
+          class="action-button next"
+          value="Next"
+        />
+        <input
+          type="button"
+          name="prev"
+          class="action-button prev"
+          value="Prev"
+        />
       </fieldset>
     </div>
   </body>

@@ -14,7 +14,7 @@ html {
 #msform {
   max-width: 700px;
   width: 95%;
-  margin: 50px auto;
+  margin: 30px auto;
   position: relative;
 }
 #msform fieldset {
@@ -29,11 +29,13 @@ html {
   position: relative;
   border-radius: 5px;
 }
-
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
 #msform input,
 #msform textarea,
-#msform,
-select {
+#msform select {
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -128,6 +130,7 @@ select {
 #progressbar li.active:before,
 #progressbar li.active:after {
   background: #ff9933;
+  color: #fff;
 }
 .form-group {
   margin: 10px auto;

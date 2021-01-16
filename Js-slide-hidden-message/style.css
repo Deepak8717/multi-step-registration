@@ -1,0 +1,13 @@
+.message {
+  margin-top: -295px;
+  transition: 0.5s ease;
+  background: #181818;
+  color: #fff;
+
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+}
+.message.clicked {
+  margin-top: 0;
+}
